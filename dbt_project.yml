@@ -33,6 +33,8 @@ models:
     staging:
       +materialized: view
       +database: raw
+      +schema: transforming
     marts:
       +materialized: table
       +database: mart
+      +schema: transforming
